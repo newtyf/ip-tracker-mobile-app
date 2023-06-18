@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import {Color} from '../types/Colors';
 
 interface propsInput {
   getGeolocalizattion: () => void;
@@ -21,6 +22,7 @@ export const Input = (props: propsInput) => {
         style={styles.input}
         onChangeText={onText}
         placeholder="192.176.30.20"
+        placeholderTextColor={Color.BlueDark}
       />
       <TouchableOpacity
         style={styles.buttonArrow}
@@ -40,18 +42,19 @@ const styles = StyleSheet.create({
   buttonArrow: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#000000',
+    backgroundColor: Color.Dark,
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
   },
   input: {
-    backgroundColor: '#bdc3c7',
+    backgroundColor: Color.Ligth,
     minWidth: 250,
     padding: 10,
     paddingHorizontal: 20,
     borderTopLeftRadius: 10,
     borderBottomLeftRadius: 10,
+    color: Color.Dark,
   },
 });

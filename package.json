@@ -7,17 +7,21 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "co": "sui-mono commit"
   },
   "dependencies": {
+    "@rnmapbox/maps": "^10.0.8",
     "react": "18.2.0",
-    "react-native": "0.71.11"
+    "react-native": "0.71.11",
+    "react-native-config": "^1.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
     "@react-native-community/eslint-config": "^3.2.0",
+    "@s-ui/mono": "^2.35.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",
